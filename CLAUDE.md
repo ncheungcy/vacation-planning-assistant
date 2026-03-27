@@ -4,11 +4,10 @@ This file provides guidance to Claude Code and other AI assistants working on th
 
 ## Project Overview
 
-**vacation-planning-assistant** is an AI-powered application for planning holidays/vacations. The project is in its initial stage — no application code has been built yet.
+**vacation-planning-assistant** is an AI-powered application for planning holidays/vacations.
 
 - **Repository:** `ncheungcy/vacation-planning-assistant`
 - **Default branch:** `main`
-- **Description:** AI-powered app for planning holidays
 
 No framework, language, or toolchain has been selected yet. When that decision is made, add Environment Setup and Key Files sections to this file.
 
@@ -31,9 +30,9 @@ No framework, language, or toolchain has been selected yet. When that decision i
 - Do NOT create a pull request unless explicitly asked by the user.
 - Push completed work to the feature branch and let the user decide when to open a PR.
 
-## Coding Conventions (To Be Established)
+## Coding Conventions
 
-Since the stack has not yet been chosen, the following are recommendations for when development begins. Update this section once decisions are made.
+These apply once development begins. Update this section when the stack is chosen.
 
 ### General Principles
 
@@ -56,7 +55,6 @@ Since this is an AI-powered application, follow these practices for Claude API /
 - Never commit secrets, API keys, or credentials (use `.env` files, excluded via `.gitignore`).
 - Sanitize all user-supplied input before passing to any AI model or external service.
 - Be careful with user data — vacation data may include PII (dates, locations, passport info).
-
 
 ## Testing
 
@@ -105,7 +103,7 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 - End every working response with: "Give it a try — does it work the way you expected?"
 
 ### When to push back
-- If the user asks you to skip tests, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
+- If the user asks you to skip verifying changes work, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
 - Do not agree with the user just to be agreeable. If their approach has a flaw or a better option exists, say so clearly and explain why — then let them decide.
 - If the user pushes back on your concern, you can yield — but state your position once rather than caving immediately.
 
