@@ -10,14 +10,7 @@ This file provides guidance to Claude Code and other AI assistants working on th
 - **Default branch:** `main`
 - **Description:** AI-powered app for planning holidays
 
-## Current State
-
-The project has not yet been built. No application code exists yet. Files currently in the repo:
-- `README.md` — one-line project description
-- `CLAUDE.md` — this file
-- `.claude/settings.json` — Claude Code hooks (e.g. reminder to test after changes)
-
-No framework, language, or toolchain has been selected yet. When that decision is made, update this section and the stack-related sections below.
+No framework, language, or toolchain has been selected yet. When that decision is made, update the stack-related sections below.
 
 ## Development Workflow
 
