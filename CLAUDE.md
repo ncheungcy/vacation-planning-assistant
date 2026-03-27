@@ -9,7 +9,30 @@ This file provides guidance to Claude Code and other AI assistants working on th
 - **Repository:** `ncheungcy/vacation-planning-assistant`
 - **Default branch:** `main`
 
-No framework, language, or toolchain has been selected yet. When that decision is made, add Environment Setup and Key Files sections to this file.
+**Stack:** Next.js (frontend + backend API routes) deployed on Vercel. Claude API for AI features.
+
+## Environment Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Configure environment
+cp .env.example .env.local
+# Add your ANTHROPIC_API_KEY to .env.local
+
+# Run development server
+npm run dev
+```
+
+## Key Files
+
+| File/Directory | Purpose |
+|---|---|
+| `app/` | Next.js pages and API routes |
+| `app/api/` | Backend API routes (Claude API calls live here) |
+| `.env.local` | Local environment variables (never commit this) |
+| `.env.example` | Template for required environment variables |
 
 ## Development Workflow
 
