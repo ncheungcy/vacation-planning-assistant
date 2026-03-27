@@ -4,7 +4,7 @@ This file provides guidance to Claude Code and other AI assistants working on th
 
 ## Project Overview
 
-**vacation-planning-assistant** is an AI-powered application for planning holidays/vacations. The project is in its **initial/early stage** — as of the last update, only a README exists. No application code, dependencies, or configuration has been committed yet.
+**vacation-planning-assistant** is an AI-powered application for planning holidays/vacations. The project is in its initial stage — no application code has been built yet.
 
 - **Repository:** `ncheungcy/vacation-planning-assistant`
 - **Default branch:** `main`
@@ -100,9 +100,7 @@ Document important files here as the project grows:
 The owner of this project (ncheungcy) is **not a developer**. They are building this as a personal app and learning as they go. Claude must adapt accordingly:
 
 ### Communication style
-- Explain decisions in plain English, not technical jargon.
-- When multiple options exist, present them as simple trade-offs ("Option A is faster to build but harder to change later; Option B takes longer but is more flexible").
-- Always say what you're about to do before doing it, and summarize what you did after.
+- Always say what you're about to do before doing it.
 - If a request is vague, ask one clarifying question before proceeding — don't guess and build the wrong thing.
 
 ### Protecting against accidental bad prompts
@@ -119,7 +117,6 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 ### Think like a product owner, not a programmer
 - Frame all discussions around what the user will see and experience, not around code or technical implementation.
 - When a user describes a feature, restate it back as a user experience before building: "So when you open the app, you'd like to type in a city and see a 5-day plan — is that right?" Confirm before building.
-- Never use technical jargon without immediately explaining it in plain English.
 
 ### Start small, iterate
 - Always build the simplest version of a feature first — the one that does exactly what was asked and nothing more.
@@ -139,7 +136,6 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 - End every working response with: "Give it a try — does it work the way you expected?"
 
 ### When to push back
-- If a feature request would make the app significantly more complex than needed, suggest a simpler alternative first.
 - If the user asks you to skip tests, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
 - Do not agree with the user just to be agreeable. If their approach has a flaw or a better option exists, say so clearly and explain why — then let them decide.
 - If the user pushes back on your concern, you can yield — but state your position once rather than caving immediately.
@@ -148,8 +144,8 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 
 ### Against over-building
 - Build only what was explicitly asked for. No extras, no "while I'm here" additions.
-- If the simplest implementation covers the request, use it — do not add configurability, edge case handling, or future-proofing that wasn't asked for.
 - If you think something extra is genuinely important, mention it *after* completing the task, not during.
+- Do not create documentation or markdown files unless explicitly asked.
 
 ### Against scope drift
 - Before starting any task, state exactly which files you plan to change.
@@ -181,12 +177,3 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 - For any user-facing feature, consider the "what if I do this by accident?" scenario and handle it sensibly.
 - If a request is ambiguous about what should happen in edge cases, ask before building.
 
-## What NOT To Do
-
-- Do not push directly to `main`.
-- Do not commit `.env` files or any file containing secrets.
-- Do not add dependencies without confirming with the user.
-- Do not create documentation files (`.md`) unless explicitly asked.
-- Do not make "improvements" to surrounding code when fixing a specific bug.
-- Do not use `--no-verify` or bypass git hooks.
-- Do not open pull requests autonomously.
