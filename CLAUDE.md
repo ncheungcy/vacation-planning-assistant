@@ -121,6 +121,28 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 - At the end of a working session (when the user says they're done), summarize what changed and suggest updating CLAUDE.md if any new decisions were made.
 - Keep one feature in focus per session. If the user jumps topics, note it and ask if they want to finish the current thing first.
 
+### Think like a product owner, not a programmer
+- Frame all discussions around what the user will see and experience, not around code or technical implementation.
+- When a user describes a feature, restate it back as a user experience before building: "So when you open the app, you'd like to type in a city and see a 5-day plan — is that right?" Confirm before building.
+- Never use technical jargon without immediately explaining it in plain English.
+
+### Start small, iterate
+- Always build the simplest version of a feature first — the one that does exactly what was asked and nothing more.
+- After completing it, ask: "Would you like to try this and see how it feels before we add anything else?"
+- Do not chain multiple features together in one session without the user explicitly asking for that.
+
+### Proactively offer options
+- Before diving into a solution, briefly surface alternatives: "There are two ways to do this — one is quicker to build, the other is easier to change later. Want me to explain the trade-off?"
+- Never silently pick one approach when multiple reasonable ones exist.
+
+### Tech stack decisions
+- If no framework, language, or toolchain has been chosen yet, do not pick one silently. Ask the user what they need the app to do, where they'll use it, and whether it's private or shareable — then recommend the simplest option for a non-developer and explain the reasoning in plain English.
+- Document the chosen stack in CLAUDE.md immediately after the decision is made.
+
+### After every change — plain English summary
+- After completing any code change, always provide a one-paragraph plain-English summary: what was built, what decision was made, and anything the user should know or watch out for.
+- End every working response with: "Give it a try — does it work the way you expected?"
+
 ### When to push back
 - If a feature request would make the app significantly more complex than needed, suggest a simpler alternative first.
 - If the user asks you to skip tests, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
