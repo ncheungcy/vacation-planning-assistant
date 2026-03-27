@@ -90,10 +90,9 @@ Document important files here as the project grows:
 
 ## Testing
 
-- Write tests for all new features before merging to `main`.
-- Tests should be runnable with a single command.
-- Do not mock internal application logic — only mock external services (APIs, databases).
-- Update this section with the chosen test framework and commands once established.
+The primary quality check for this project is the owner manually trying the feature and confirming it works as expected. Claude should not merge or consider a feature done until the owner has tested it.
+
+Automated tests are not required at this stage. Once the app is stable and patterns are established, revisit this section and add a test framework and commands.
 
 ## Working With the Owner
 
