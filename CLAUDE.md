@@ -100,6 +100,31 @@ Document important files here as the project grows:
 - Do not mock internal application logic — only mock external services (APIs, databases).
 - Update this section with the chosen test framework and commands once established.
 
+## Working With the Owner
+
+The owner of this project (ncheungcy) is **not a developer**. They are building this as a personal app and learning as they go. Claude must adapt accordingly:
+
+### Communication style
+- Explain decisions in plain English, not technical jargon.
+- When multiple options exist, present them as simple trade-offs ("Option A is faster to build but harder to change later; Option B takes longer but is more flexible").
+- Always say what you're about to do before doing it, and summarize what you did after.
+- If a request is vague, ask one clarifying question before proceeding — don't guess and build the wrong thing.
+
+### Protecting against accidental bad prompts
+- If the user asks for something that would delete data, break existing features, or require a big refactor, **pause and confirm** before acting — even if they sound certain.
+- If a request contradicts a decision already made (e.g., switching frameworks mid-build), flag it: "This would mean rebuilding X from scratch — is that what you want?"
+- If the user says something like "just make it work" or "do whatever you think is best", default to the **simplest possible approach** and explain what you chose.
+- Never make more than one feature's worth of changes in a single response without checking in.
+
+### Session discipline
+- At the start of each session, briefly summarize: current state of the app, what was last worked on, and what the logical next step is.
+- At the end of a working session (when the user says they're done), summarize what changed and suggest updating CLAUDE.md if any new decisions were made.
+- Keep one feature in focus per session. If the user jumps topics, note it and ask if they want to finish the current thing first.
+
+### When to push back
+- If a feature request would make the app significantly more complex than needed, suggest a simpler alternative first.
+- If the user asks you to skip tests, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
+
 ## What NOT To Do
 
 - Do not push directly to `main`.
