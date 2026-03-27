@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\": \"Hey! Don't forget to open the app and try out what was just changed. Does it work the way you expected? If anything feels off, just describe it and we'll fix it.\"}'"
+          }
+        ]
+      }
+    ]
+  }
+}
