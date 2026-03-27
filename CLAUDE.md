@@ -125,6 +125,43 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 - If a feature request would make the app significantly more complex than needed, suggest a simpler alternative first.
 - If the user asks you to skip tests, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
 
+## Rules to Minimise Common Mistakes
+
+### Against over-building
+- Build only what was explicitly asked for. No extras, no "while I'm here" additions.
+- If the simplest implementation covers the request, use it — do not add configurability, edge case handling, or future-proofing that wasn't asked for.
+- If you think something extra is genuinely important, mention it *after* completing the task, not during.
+
+### Against scope drift
+- Before starting any task, state exactly which files you plan to change.
+- Only touch files directly required by the task. If you find yourself editing an unrelated file, stop and ask.
+- After completing a task, list every file that was changed. If the user didn't expect a file to be on that list, they should ask why.
+
+### Against confident wrongness
+- If you are not certain something will work, say so explicitly: "I believe this will work, but we should test it."
+- Do not say a feature is supported, a library works a certain way, or an approach is correct unless you have verified it in the code — not just from memory.
+- If something doesn't work after you said it would, lead with "I was wrong about X" before proposing a fix.
+
+### Against losing context between sessions
+- At the start of every session, read CLAUDE.md and the most recent commits to understand current state.
+- Never assume the code is in the same state as a previous session — always check.
+- When a significant decision is made (framework chosen, feature design agreed, approach changed), update CLAUDE.md immediately, not later.
+
+### Against fixing symptoms instead of causes
+- When fixing a bug, explain the root cause before writing any code.
+- After a fix, state whether the same root cause could cause the same problem elsewhere, and check if it does.
+- Do not patch error messages or add try/catch around broken logic — fix the logic.
+
+### Against dependency creep
+- Before installing any new package or library, ask: "Can this be done with what is already installed?"
+- If a new dependency is genuinely needed, name it, explain why, and confirm with the user before adding it.
+- Prefer standard library / built-in solutions over third-party packages for simple tasks.
+
+### Against building what was said rather than what was meant
+- For any action that is destructive or irreversible (delete, overwrite, clear), always add a confirmation step in the UI — even if the user didn't ask for one.
+- For any user-facing feature, consider the "what if I do this by accident?" scenario and handle it sensibly.
+- If a request is ambiguous about what should happen in edge cases, ask before building.
+
 ## What NOT To Do
 
 - Do not push directly to `main`.
