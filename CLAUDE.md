@@ -12,10 +12,12 @@ This file provides guidance to Claude Code and other AI assistants working on th
 
 ## Current State
 
-The repository currently contains only:
-- `README.md` — one-line description of the project
+The project has not yet been built. No application code exists yet. Files currently in the repo:
+- `README.md` — one-line project description
+- `CLAUDE.md` — this file
+- `.claude/settings.json` — Claude Code hooks (e.g. reminder to test after changes)
 
-No framework, language, or toolchain has been selected yet. When starting development, follow the conventions established in this file or update this document to reflect the chosen stack.
+No framework, language, or toolchain has been selected yet. When that decision is made, update this section and the stack-related sections below.
 
 ## Development Workflow
 
