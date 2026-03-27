@@ -10,7 +10,7 @@ This file provides guidance to Claude Code and other AI assistants working on th
 - **Default branch:** `main`
 - **Description:** AI-powered app for planning holidays
 
-No framework, language, or toolchain has been selected yet. When that decision is made, update the stack-related sections below.
+No framework, language, or toolchain has been selected yet. When that decision is made, add Environment Setup and Key Files sections to this file.
 
 ## Development Workflow
 
@@ -57,36 +57,6 @@ Since this is an AI-powered application, follow these practices for Claude API /
 - Sanitize all user-supplied input before passing to any AI model or external service.
 - Be careful with user data — vacation data may include PII (dates, locations, passport info).
 
-## Environment Setup (Placeholder)
-
-Once the stack is chosen, document setup steps here. Expected sections:
-
-```
-# Install dependencies
-<package manager install command>
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your API keys (ANTHROPIC_API_KEY, etc.)
-
-# Run development server
-<dev command>
-
-# Run tests
-<test command>
-```
-
-## Key Files (Placeholder)
-
-Document important files here as the project grows:
-
-| File/Directory | Purpose |
-|---|---|
-| `README.md` | Project overview |
-| `CLAUDE.md` | AI assistant guidance (this file) |
-| _(to be added)_ | Application entry point |
-| _(to be added)_ | Core AI/LLM integration logic |
-| _(to be added)_ | Environment variable definitions |
 
 ## Testing
 
