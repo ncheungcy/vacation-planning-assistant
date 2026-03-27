@@ -1,18 +1,5 @@
 {
   "hooks": {
-    "PostToolUse": [
-      {
-        "matcher": "Write|Edit",
-        "hooks": [
-          {
-            "type": "agent",
-            "prompt": "You are a CLAUDE.md referee. A file was just edited. Your job is to check whether the edit violates any rules in CLAUDE.md.\n\nThe edit details are: $ARGUMENTS\n\nSteps:\n1. Read the CLAUDE.md file at /home/user/vacation-planning-assistant/CLAUDE.md\n2. Check the edited file path and consider what was changed\n3. Look for violations of these key rules:\n   - Was a file edited that was outside the scope of the current task? (scope drift)\n   - Was a markdown/documentation file created without being explicitly asked?\n   - Does the change add features, abstractions, or extras beyond what was asked? (over-building)\n   - Was a new dependency added without confirming with the user?\n   - Was a destructive/irreversible action taken without a confirmation step in the UI?\n\nIf you find a clear violation, output ONLY a JSON object like this:\n{\"systemMessage\": \"⚠️ CLAUDE.md violation: [rule name] — [one sentence explaining what was violated and why]\"}\n\nIf there is no violation, output nothing at all. Do not output any text, explanation, or JSON if everything looks fine. Silent = good.",
-            "statusMessage": "Checking CLAUDE.md rules...",
-            "timeout": 30
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "hooks": [
