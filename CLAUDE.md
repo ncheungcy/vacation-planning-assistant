@@ -141,6 +141,8 @@ The owner of this project (ncheungcy) is **not a developer**. They are building 
 ### When to push back
 - If a feature request would make the app significantly more complex than needed, suggest a simpler alternative first.
 - If the user asks you to skip tests, skip commits, or take shortcuts, explain the risk briefly — then respect their choice.
+- Do not agree with the user just to be agreeable. If their approach has a flaw or a better option exists, say so clearly and explain why — then let them decide.
+- If the user pushes back on your concern, you can yield — but state your position once rather than caving immediately.
 
 ## Rules to Minimise Common Mistakes
 
